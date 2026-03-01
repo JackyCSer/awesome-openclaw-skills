@@ -1,6 +1,6 @@
 # Awesome OpenClaw Skills
 
-A curated collection of battle-tested [OpenClaw (Claude Code)](https://github.com/anthropics/claude-code) Skills, built and verified in real-world workflows.
+A curated collection of battle-tested [OpenClaw](https://github.com/openclaw/openclaw) / [Claude Code](https://github.com/anthropics/claude-code) Skills, built and verified in real-world workflows.
 
 > All Skills in this repo are personally created and stress-tested by [@JackyCSer](https://github.com/JackyCSer). If a Skill is here, it works.
 
@@ -10,17 +10,31 @@ A curated collection of battle-tested [OpenClaw (Claude Code)](https://github.co
 |-------|-------------|
 | [web-scraper-jina-ai](web-scraper-jina-ai/) | Scrape any webpage via Jina AI Reader. Returns clean Markdown. Supports JS-rendered pages, paywall bypass, and X/Twitter scraping. |
 
-## Installation
+## Installation & Usage
 
-### Method 1: Clone & Copy (Recommended)
+### OpenClaw (Recommended)
+
+Copy the Skill folder into your OpenClaw skills directory:
 
 ```bash
 git clone https://github.com/JackyCSer/awesome-openclaw-skills.git
+
+# Global install — available across all agents
+cp -r awesome-openclaw-skills/web-scraper-jina-ai/ ~/.openclaw/skills/
+
+# Workspace install — available in current workspace only
+cp -r awesome-openclaw-skills/web-scraper-jina-ai/ <workspace>/skills/
 ```
 
-Then copy the Skill you want into your Claude Code skills directory:
+Restart the OpenClaw gateway to pick up the new Skill. Once loaded, OpenClaw will **automatically invoke** the Skill when relevant, or you can trigger it manually via slash command.
+
+### Claude Code
+
+Copy the Skill folder into your Claude Code skills directory:
 
 ```bash
+git clone https://github.com/JackyCSer/awesome-openclaw-skills.git
+
 # Global install — available in all projects
 cp -r awesome-openclaw-skills/web-scraper-jina-ai/ ~/.claude/skills/
 
@@ -28,34 +42,21 @@ cp -r awesome-openclaw-skills/web-scraper-jina-ai/ ~/.claude/skills/
 cp -r awesome-openclaw-skills/web-scraper-jina-ai/ .claude/skills/
 ```
 
-### Method 2: Download Individual Skill
+Once installed, Claude Code will **automatically invoke** the Skill when it's relevant to your conversation. You can also invoke it directly with the `/` command:
 
-If you only need one Skill, download its folder directly and place it in:
-
-| Scope | Path |
-|-------|------|
-| Personal (all projects) | `~/.claude/skills/<skill-name>/` |
-| Project-specific | `<project>/.claude/skills/<skill-name>/` |
+```
+/web-scraper-jina-ai https://example.com/article
+```
 
 ### Verify Installation
 
-Open Claude Code and ask:
+Ask your agent:
 
 ```
 What skills are available?
 ```
 
 You should see the installed Skill in the list.
-
-## Usage
-
-Once installed, Claude Code **automatically invokes** the Skill when it's relevant to your conversation. For example, if you ask Claude to scrape a JS-rendered webpage, it will use `web-scraper-jina-ai` without you having to do anything.
-
-You can also invoke a Skill directly with the `/` command:
-
-```
-/web-scraper-jina-ai https://example.com/article
-```
 
 ## Skill Structure
 

@@ -14,7 +14,20 @@ A curated collection of battle-tested [OpenClaw](https://github.com/openclaw/ope
 
 ### OpenClaw (Recommended)
 
-Copy the Skill folder into your OpenClaw skills directory:
+The easiest way — just send this message to your OpenClaw agent via **WhatsApp / Telegram / Feishu / Discord** or any connected chat platform:
+
+> Please Install the `web-scraper-jina-ai` Skill from this GitHub repo: https://github.com/JackyCSer/awesome-openclaw-skills
+>
+> Steps:
+> 1. Clone the repo: `git clone https://github.com/JackyCSer/awesome-openclaw-skills.git`
+> 2. Copy the Skill to your skills directory: `cp -r awesome-openclaw-skills/web-scraper-jina-ai/ ~/.openclaw/skills/`
+> 3. Clean up: `rm -rf awesome-openclaw-skills`
+> 4. Restart the gateway to load the new Skill
+
+OpenClaw will handle the rest automatically. Once installed, the Skill will be **auto-invoked** when relevant, or you can trigger it manually via slash command.
+
+<details>
+<summary>Manual install (alternative)</summary>
 
 ```bash
 git clone https://github.com/JackyCSer/awesome-openclaw-skills.git
@@ -26,7 +39,9 @@ cp -r awesome-openclaw-skills/web-scraper-jina-ai/ ~/.openclaw/skills/
 cp -r awesome-openclaw-skills/web-scraper-jina-ai/ <workspace>/skills/
 ```
 
-Restart the OpenClaw gateway to pick up the new Skill. Once loaded, OpenClaw will **automatically invoke** the Skill when relevant, or you can trigger it manually via slash command.
+Restart the OpenClaw gateway to pick up the new Skill.
+
+</details>
 
 ### Claude Code
 

@@ -81,7 +81,6 @@ Each Skill follows the standard OpenClaw Skill format:
 skill-name/
   SKILL.md        # Skill definition and instructions
   scripts/        # Helper scripts (optional)
-  LICENSE.txt     # License
 ```
 
 ## Contributing
@@ -90,4 +89,4 @@ Found a bug or have an improvement? PRs and Issues are welcome.
 
 ## License
 
-Each Skill has its own license. See the `LICENSE.txt` in each Skill directory. Default: [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0).
+[Apache 2.0](LICENSE.txt)
